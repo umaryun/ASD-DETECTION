@@ -22,6 +22,12 @@ with open("asd_detection2.pkl", "rb") as file:
     knn_model = model_data["knn_model"]
     dt_model = model_data["dt_model"]
 
+
+@app2.route('/', methods=['GET'])
+def home():
+    return jsonify({"message": "welcome to the home page"})
+
+
 @app2.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
