@@ -9,6 +9,7 @@ app2 = Flask(__name__)
 CORS(app2)  
 
 
+
 SUPABASE_URL = "https://uunvtyrecichdaotqlkt.supabase.co"  #Supabase URL
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV1bnZ0eXJlY2ljaGRhb3RxbGt0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDczMzI2MTMsImV4cCI6MjA2MjkwODYxM30.gJ1WNO0U15m9BAVqAcTrTlchR7gNo_3VZAib2gA2-SQ" #Supabase anon Key  
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
